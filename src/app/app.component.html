@@ -1,9 +1,12 @@
 <h1>App Component</h1>
 <h2>Hello {{ name1 }},</h2>
-Enter Text: <input type="text" [(ngModel)]="name1" /> &nbsp;&nbsp;
+Enter Text:
+<input type="text" [(ngModel)]="name1" placeholder="Enter Text" /> &nbsp;&nbsp;
 <button title="Click" (click)="upperCase()">To Upper Case</button><br /><br />
+<button (click)="decrement()">Decrement Counter</button>
+<hr />
+
+<app-first [value]="name1" (outEvent)="parentMethodCall()"></app-first>
 <hr />
 <hello></hello>
-<hr />
-<app-first [value]="name1" (outEvent)="parentMethodCall()"></app-first>
 <hr />

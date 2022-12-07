@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-first',
@@ -7,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myService: MyServiceService) { }
 
   @Input() value: string;
   @Output() outEvent : EventEmitter<string> = new EventEmitter<string>();
@@ -17,6 +18,10 @@ export class FirstComponent implements OnInit {
   public first() : void{
     console.log("First button clicked"); 
     this.outEvent.emit("First Button Clicked...");
+  }
+
+  public increment() :void{
+    this.myService.increment();
   }
 
 }
