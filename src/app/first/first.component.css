@@ -1,0 +1,7 @@
+.first {
+  background-color: brown;
+  color: rgb(240, 139, 16);
+  font-size: large;
+  height: auto;
+  box-sizing: content-box;
+}

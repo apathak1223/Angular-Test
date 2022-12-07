@@ -1,6 +1,9 @@
-<h1>
-Hello {{name1}},
-</h1>
-<button title="Click" (click) = "fun()"> Click</button><br><br>
+<h1> App Component</h1>
+<h2>Hello {{name1}},</h2>
 <input type="text" [(ngModel)]="name1"/>
-
+<button title="Click" (click) = "upperCase()"> To Upper Case</button><br><br>
+<hr>
+<hello></hello>
+<hr>
+<app-first [value]="name1" (outEvent) = "parentMethodCall()"></app-first>
+<hr>

@@ -9,9 +9,15 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   name1 = '';
   public test = 'Test Message';
-  public fun(): string {
+  
+  public upperCase(): string {
     console.log('Clicked');
     this.name1 = this.name1.toUpperCase();
     return 'test';
+  }
+
+  public parentMethodCall() : void{
+    alert("Parent method called from First Component!!");
+    this.upperCase();
   }
 }
