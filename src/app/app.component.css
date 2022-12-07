@@ -1,3 +1,30 @@
 p {
   font-family: Lato;
 }
+
+.left {
+  flex: 33.33%;
+  height: 200px;
+  padding: 10px;
+  margin: 5px;
+  min-height: 100px;
+}
+
+.right {
+  flex: 33.33%;
+  height: 200px;
+  padding: 10px;
+  margin: 5px;
+  min-height: 100px;
+}
+.container {
+  display: flex;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
