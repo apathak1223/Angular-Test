@@ -2,7 +2,7 @@ p {
   font-family: Lato;
 }
 
-.left {
+.block {
   flex: 33.33%;
   height: 200px;
   padding: 10px;
@@ -10,21 +10,19 @@ p {
   min-height: 100px;
 }
 
-.right {
-  flex: 33.33%;
-  height: 200px;
-  padding: 10px;
-  margin: 5px;
-  min-height: 100px;
-}
+
 .container {
   display: flex;
 }
 
+.center {
+  background-color: rgb(210, 190, 236);
+}
+
 .orange {
-  background-color: orange;
+  background-color: rgb(233, 215, 183);
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(188, 228, 188);
 }

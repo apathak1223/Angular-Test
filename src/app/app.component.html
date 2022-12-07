@@ -1,15 +1,15 @@
 <div class="container">
-    <div class="left orange"><h1>App Component</h1>
+    <div class="block orange"><h1>App Component</h1>
     <h2>Hello {{ name1 }},</h2>
     Enter Text:
     <input type="text" [(ngModel)]="name1" placeholder="Enter Text" /> &nbsp;&nbsp;
     <button title="Click" (click)="upperCase()">To Upper Case</button><br /><br />
     <button (click)="decrement()">Decrement Counter</button>
   </div>
-  <div>
+  <div class="block center">
     <app-first [value]="name1" (outEvent)="parentMethodCall()"></app-first>
   </div>
-  <div class="left green">
+  <div class="block green">
     <hello></hello>
   </div>
 </div>
